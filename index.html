@@ -3,9 +3,45 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Capta Generator</title>
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </head>
-<body>
-    <h1> Himanshu Singh</h1>
+<body onload="generate()">
+
+    <center>
+
+
+        <div class="conatiner">
+            <div class="Container1">
+
+                <div id="user-input" class="inline">
+                    <input type="text" id="submit"
+                           placeholder="Captcha code" />
+                </div>
+
+                <div class="inline" onclick="generate()">
+                    <i class="fas fa-sync"></i>
+                </div>
+
+                <div id="image" class="inline" selectable="False">
+                </div>
+
+            </div>
+
+            <br />
+            <div class="Container2">
+                <button onclick="printmsg()"> Submit </button>
+                <button style="margin-left:10px" onclick="reloadPage()">New Captcha</button>
+            </div>
+             
+
+
+            <p id="key" style=""></p>
+        </div>
+    </center>
 </body>
+
+</html>
 </html>
